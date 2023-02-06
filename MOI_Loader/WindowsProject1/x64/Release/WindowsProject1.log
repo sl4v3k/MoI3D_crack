@@ -1,0 +1,8 @@
+﻿C:\A-TOOLS\Microsoft Visual Studio\2019\Professional\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: The intermediate directory (x64\Release\) contains files shared from another project (WindowsProject1.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  WindowsProject1.cpp
+C:\Users\slavek\source\repos\MOI_Loader\WindowsProject1\WindowsProject1.cpp(42,55): warning C4309: '=': truncation of constant value
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 1 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  WindowsProject1.vcxproj -> C:\Users\slavek\source\repos\MOI_Loader\x64\Release\MoI_Start.exe
