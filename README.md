@@ -4,7 +4,7 @@ Main goal of this material is to see mistake in using Themida WinLicense.
 
 MoI.exe is just loader of moi_lib.dll which is packed by WinLicence packer.
 
-After little time of bianry investigation its clear that it snot necessary to fully unpack the dll the final solution is to rewrite MoI.exe and add in memory patching procedures such es:
+After little time of bianry investigation its clear that it is not necessary to fully unpack the dll, the final solution is to rewrite MoI.exe and add in memory patching procedures such es:
 
 ```
 typedef int(__stdcall* f_MoiMainWin)(HINSTANCE, LPWSTR, int);
