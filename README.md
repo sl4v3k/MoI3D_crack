@@ -29,11 +29,12 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 
             VirtualProtect((LPVOID)(dllBase + 0x1000), 0x200000, PAGE_EXECUTE_READWRITE, &oldprotect);
 
-        ``    *(__int8*)(dllBase + 0x1000 + 0x17EA56) = 0xB8``
-        ``    *(__int8*)(dllBase + 0x1000 + 0x17EA57) = 0x02``
-        ``    *(__int8*)(dllBase + 0x1000 + 0x17EA58) = 0x00``
-        ``    *(__int8*)(dllBase + 0x1000 + 0x17EA59) = 0x00``
-        ``    *(__int8*)(dllBase + 0x1000 + 0x17EA5a) = 0x00``
+            //mov eax, 0x02
+            *(__int8*)(dllBase + 0x1000 + 0x17EA56) = 0xB8
+            *(__int8*)(dllBase + 0x1000 + 0x17EA57) = 0x02
+            *(__int8*)(dllBase + 0x1000 + 0x17EA58) = 0x00
+            *(__int8*)(dllBase + 0x1000 + 0x17EA59) = 0x00
+            *(__int8*)(dllBase + 0x1000 + 0x17EA5a) = 0x00
             
             VirtualProtect((LPVOID)(dllBase + 0x1000), 0x200000, oldprotect, &oldprotect);
 
